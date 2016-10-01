@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Angela_Photography" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headtilt" translatesAutoresizingMaskIntoConstraints="NO" id="FUi-b6-yXg"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0G-iO-LQn" customClass="Login_Button" customModule="Angela_Photography" customModuleProvider="target">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="6b4-o4-Kd3"/>
+                                    <constraint firstAttribute="width" constant="156" id="wrq-Dv-MSx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="27"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Enter"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.99627781410000005" green="0.99627781410000005" blue="0.99627781410000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Bva-Qf-ZUe" kind="show" id="kUI-MQ-o2a"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWJ-Rf-24S">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="Dck-CS-gkL"/>
+                                    <constraint firstAttribute="height" constant="77" id="RGJ-KE-0U0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="49"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FUi-b6-yXg" secondAttribute="bottom" id="4di-Fz-6Zq"/>
+                            <constraint firstItem="FUi-b6-yXg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9LM-mj-sFz"/>
+                            <constraint firstItem="FUi-b6-yXg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C2Q-sL-gwY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="V0G-iO-LQn" secondAttribute="bottom" constant="143" id="CAO-uD-LhY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FUi-b6-yXg" secondAttribute="bottom" id="Icy-9h-wMq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AWJ-Rf-24S" secondAttribute="trailing" constant="51" id="POD-Nq-uUU"/>
+                            <constraint firstItem="AWJ-Rf-24S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="SRm-OZ-Z6K"/>
+                            <constraint firstAttribute="trailing" secondItem="FUi-b6-yXg" secondAttribute="trailing" id="eQU-F1-BwO"/>
+                            <constraint firstItem="V0G-iO-LQn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kzG-i4-cxu"/>
+                            <constraint firstAttribute="trailing" secondItem="FUi-b6-yXg" secondAttribute="trailing" id="o06-GS-Ub7"/>
+                            <constraint firstItem="FUi-b6-yXg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="q1H-zJ-Hh6"/>
+                            <constraint firstItem="AWJ-Rf-24S" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="58" id="ueo-cV-HFL"/>
+                            <constraint firstItem="FUi-b6-yXg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="yyd-w3-Juq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="welcomeButton" destination="V0G-iO-LQn" id="hAs-kB-mM5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+        <!--Angela Lauren PhotoGraphy-->
+        <scene sceneID="5Yu-az-2pA">
+            <objects>
+                <viewController id="Atl-Mc-gRh" customClass="ViewController" customModule="Angela_Photography" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dfU-Dd-Zvy"/>
+                        <viewControllerLayoutGuide type="bottom" id="HGO-6K-UKH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L1K-f8-rdF">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MnI-gg-CKt">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4R1-DA-EL6" userLabel="About me">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutme 2" translatesAutoresizingMaskIntoConstraints="NO" id="QfC-hL-7Fe"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XK3-Nf-Tll" customClass="SectionsButtons" customModule="Angela_Photography" customModuleProvider="target">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="59" id="sZu-kw-ksA"/>
+                                                    <constraint firstAttribute="width" constant="152" id="wqz-jR-wZJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                                                <state key="normal" title="About Me ">
+                                                    <color key="titleColor" red="0.99627781410000005" green="0.99627781410000005" blue="0.99627781410000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.99627781410000005" green="0.99627781410000005" blue="0.99627781410000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="YEs-lM-FyY" kind="show" id="iNv-Or-DX7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="QfC-hL-7Fe" firstAttribute="top" secondItem="4R1-DA-EL6" secondAttribute="top" id="EWz-gR-f5F"/>
+                                            <constraint firstAttribute="bottom" secondItem="QfC-hL-7Fe" secondAttribute="bottom" id="PWe-4U-aD8"/>
+                                            <constraint firstAttribute="trailing" secondItem="QfC-hL-7Fe" secondAttribute="trailing" id="X2H-0s-WGM"/>
+                                            <constraint firstItem="QfC-hL-7Fe" firstAttribute="leading" secondItem="4R1-DA-EL6" secondAttribute="leading" id="fUs-Vq-03C"/>
+                                            <constraint firstItem="XK3-Nf-Tll" firstAttribute="centerY" secondItem="4R1-DA-EL6" secondAttribute="centerY" id="qld-cQ-7dv"/>
+                                            <constraint firstItem="XK3-Nf-Tll" firstAttribute="centerX" secondItem="4R1-DA-EL6" secondAttribute="centerX" id="sp6-hO-Pbl"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lgd-cM-JUl" userLabel="Portfolio">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portfolio" translatesAutoresizingMaskIntoConstraints="NO" id="vbX-Bt-9xL"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yiy-Tl-x6j" customClass="SectionsButtons" customModule="Angela_Photography" customModuleProvider="target">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="131" id="k1S-ag-VsM"/>
+                                                    <constraint firstAttribute="height" constant="47" id="rla-oD-bUX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                                <state key="normal" title="PortFolio">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.99627781410000005" green="0.99627781410000005" blue="0.99627781410000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="hp0-rb-1Qo" kind="show" id="5cp-tg-lMT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Yiy-Tl-x6j" firstAttribute="centerX" secondItem="Lgd-cM-JUl" secondAttribute="centerX" id="Anh-mR-lBG"/>
+                                            <constraint firstItem="vbX-Bt-9xL" firstAttribute="top" secondItem="Lgd-cM-JUl" secondAttribute="top" id="CrB-1X-gjs"/>
+                                            <constraint firstAttribute="bottom" secondItem="vbX-Bt-9xL" secondAttribute="bottom" id="I8F-q5-Dye"/>
+                                            <constraint firstItem="Yiy-Tl-x6j" firstAttribute="centerY" secondItem="Lgd-cM-JUl" secondAttribute="centerY" id="Wfh-yK-ECc"/>
+                                            <constraint firstItem="vbX-Bt-9xL" firstAttribute="leading" secondItem="Lgd-cM-JUl" secondAttribute="leading" id="ZOl-Xe-T9p"/>
+                                            <constraint firstAttribute="trailing" secondItem="vbX-Bt-9xL" secondAttribute="trailing" id="vwN-GY-OvM"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qIU-EA-kah" userLabel="Contact">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact" translatesAutoresizingMaskIntoConstraints="NO" id="OAX-C0-hve"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="li2-kX-PyG" customClass="SectionsButtons" customModule="Angela_Photography" customModuleProvider="target">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="80G-h2-bjS"/>
+                                                    <constraint firstAttribute="width" constant="133" id="up1-U2-Uyj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                                                <state key="normal" title="Contact">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.99627781410000005" green="0.99627781410000005" blue="0.99627781410000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="iG3-Yi-PrC" kind="show" id="zw5-Fl-nW3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="OAX-C0-hve" firstAttribute="leading" secondItem="qIU-EA-kah" secondAttribute="leading" id="Cxc-wX-Ph8"/>
+                                            <constraint firstItem="li2-kX-PyG" firstAttribute="centerX" secondItem="qIU-EA-kah" secondAttribute="centerX" id="Jjr-H1-E4C"/>
+                                            <constraint firstAttribute="trailing" secondItem="OAX-C0-hve" secondAttribute="trailing" id="PMC-hC-4ET"/>
+                                            <constraint firstItem="li2-kX-PyG" firstAttribute="centerY" secondItem="qIU-EA-kah" secondAttribute="centerY" id="ahu-8q-0aj"/>
+                                            <constraint firstAttribute="bottom" secondItem="OAX-C0-hve" secondAttribute="bottom" id="cUb-xN-0iN"/>
+                                            <constraint firstItem="OAX-C0-hve" firstAttribute="top" secondItem="qIU-EA-kah" secondAttribute="top" id="edi-Ak-ojT"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="MnI-gg-CKt" secondAttribute="bottom" id="B0V-tv-tWd"/>
+                            <constraint firstAttribute="trailing" secondItem="MnI-gg-CKt" secondAttribute="trailing" id="Po3-Fq-xan"/>
+                            <constraint firstItem="MnI-gg-CKt" firstAttribute="leading" secondItem="L1K-f8-rdF" secondAttribute="leading" id="Tjq-T1-tcl"/>
+                            <constraint firstItem="MnI-gg-CKt" firstAttribute="top" secondItem="L1K-f8-rdF" secondAttribute="top" id="yuk-fn-xZv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Angela Lauren PhotoGraphy" id="3ym-I4-4he"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="drg-Bz-mnW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1815.2" y="36.431784107946029"/>
+        </scene>
+        <!--Portfolio View Controller-->
+        <scene sceneID="cZd-oE-4X2">
+            <objects>
+                <viewController id="hp0-rb-1Qo" customClass="PortfolioViewController" customModule="Angela_Photography" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1By-UA-zuz"/>
+                        <viewControllerLayoutGuide type="bottom" id="BAg-6T-9Zr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aDI-qF-hvg">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rb7-xI-vrK">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3JH-pD-lZ6">
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="6Yx-C0-9wE">
+                                        <connections>
+                                            <action selector="goBack" destination="rb7-xI-vrK" id="fNx-Dt-Kke"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="fastForward" id="jOF-qL-5yW">
+                                        <connections>
+                                            <action selector="goForward" destination="rb7-xI-vrK" id="oDa-hW-u6T"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2e9-Cb-MO2"/>
+                                    <barButtonItem systemItem="refresh" id="FMD-nM-bzr">
+                                        <connections>
+                                            <action selector="reload" destination="rb7-xI-vrK" id="D0A-hE-rdt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="stop" id="cpn-gQ-3i4">
+                                        <connections>
+                                            <action selector="stopLoading" destination="rb7-xI-vrK" id="oPD-f5-KMJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3JH-pD-lZ6" firstAttribute="bottom" secondItem="BAg-6T-9Zr" secondAttribute="top" id="HD3-5M-ni0"/>
+                            <constraint firstAttribute="trailing" secondItem="rb7-xI-vrK" secondAttribute="trailing" id="L8K-wA-IcQ"/>
+                            <constraint firstItem="3JH-pD-lZ6" firstAttribute="top" secondItem="rb7-xI-vrK" secondAttribute="bottom" id="Q3c-aJ-VTl"/>
+                            <constraint firstItem="rb7-xI-vrK" firstAttribute="top" secondItem="1By-UA-zuz" secondAttribute="bottom" id="Rng-IF-9sb"/>
+                            <constraint firstItem="rb7-xI-vrK" firstAttribute="trailing" secondItem="3JH-pD-lZ6" secondAttribute="trailing" id="ZhP-03-ayw"/>
+                            <constraint firstItem="rb7-xI-vrK" firstAttribute="leading" secondItem="aDI-qF-hvg" secondAttribute="leading" id="Zle-oi-cjK"/>
+                            <constraint firstItem="rb7-xI-vrK" firstAttribute="leading" secondItem="3JH-pD-lZ6" secondAttribute="leading" id="vn2-yS-Rgh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="porfolioWebView" destination="rb7-xI-vrK" id="4C0-Mv-Ad6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QGF-w8-bdt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2557.5999999999999" y="154.27286356821591"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="305-PN-G9u">
+            <objects>
+                <viewController id="iG3-Yi-PrC" customClass="ContactViewController" customModule="Angela_Photography" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gg2-Gt-enO"/>
+                        <viewControllerLayoutGuide type="bottom" id="ATw-Bx-JdN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mPP-rN-CYa">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OOh-OI-t8M">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ER2-yW-BTM">
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="y5j-jF-dsU">
+                                        <connections>
+                                            <action selector="goBack" destination="OOh-OI-t8M" id="r1c-ox-0S5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="fastForward" id="S67-ul-HUF">
+                                        <connections>
+                                            <action selector="goForward" destination="OOh-OI-t8M" id="q9w-aS-VPH"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="zUp-XZ-j4A"/>
+                                    <barButtonItem systemItem="refresh" id="co2-xf-AaA">
+                                        <connections>
+                                            <action selector="reload" destination="OOh-OI-t8M" id="VEk-Fe-gXK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="stop" id="967-Nd-GKI">
+                                        <connections>
+                                            <action selector="stopLoading" destination="OOh-OI-t8M" id="A0G-go-9oQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ER2-yW-BTM" firstAttribute="trailing" secondItem="OOh-OI-t8M" secondAttribute="trailing" id="6ze-ay-h1V"/>
+                            <constraint firstItem="ER2-yW-BTM" firstAttribute="bottom" secondItem="ATw-Bx-JdN" secondAttribute="top" id="PzK-57-zv4"/>
+                            <constraint firstItem="ATw-Bx-JdN" firstAttribute="top" secondItem="OOh-OI-t8M" secondAttribute="bottom" id="QRj-0Q-EzW"/>
+                            <constraint firstAttribute="trailing" secondItem="OOh-OI-t8M" secondAttribute="trailing" id="jyJ-ow-VQn"/>
+                            <constraint firstItem="OOh-OI-t8M" firstAttribute="top" secondItem="mPP-rN-CYa" secondAttribute="top" id="ur2-C0-ira"/>
+                            <constraint firstItem="OOh-OI-t8M" firstAttribute="leading" secondItem="mPP-rN-CYa" secondAttribute="leading" id="w9P-sG-RXt"/>
+                            <constraint firstItem="ER2-yW-BTM" firstAttribute="leading" secondItem="OOh-OI-t8M" secondAttribute="leading" id="wRE-I0-i4x"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contactWebview" destination="OOh-OI-t8M" id="1pD-Dc-pxn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pFP-Ne-elz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1813.5999999999999" y="768.66566716641682"/>
+        </scene>
+        <!--About Me View Controller-->
+        <scene sceneID="Ohm-Aa-kQH">
+            <objects>
+                <viewController id="YEs-lM-FyY" customClass="AboutMeViewController" customModule="Angela_Photography" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qyv-Rz-0EN"/>
+                        <viewControllerLayoutGuide type="bottom" id="rto-VR-Uto"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0I8-Wh-bvv">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5f1-Vv-kZK">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zjR-gP-BKJ">
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="GZL-29-bUh">
+                                        <connections>
+                                            <action selector="goBack" destination="5f1-Vv-kZK" id="xW5-SF-nXG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="fastForward" id="G1x-FL-PkL">
+                                        <connections>
+                                            <action selector="goForward" destination="5f1-Vv-kZK" id="TiP-0Q-yYh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="uDv-Pe-hlN"/>
+                                    <barButtonItem systemItem="refresh" id="dPp-9L-AsK">
+                                        <connections>
+                                            <action selector="reload" destination="5f1-Vv-kZK" id="Du2-jc-WwG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="stop" id="oc8-un-GYN">
+                                        <connections>
+                                            <action selector="stopLoading" destination="5f1-Vv-kZK" id="dnj-xN-dTS"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5f1-Vv-kZK" firstAttribute="top" secondItem="Qyv-Rz-0EN" secondAttribute="bottom" constant="-20" id="1kE-Xq-yD6"/>
+                            <constraint firstItem="zjR-gP-BKJ" firstAttribute="top" secondItem="5f1-Vv-kZK" secondAttribute="bottom" id="LJt-wc-4bn"/>
+                            <constraint firstItem="5f1-Vv-kZK" firstAttribute="leading" secondItem="0I8-Wh-bvv" secondAttribute="leading" id="dTn-Ne-NSq"/>
+                            <constraint firstItem="rto-VR-Uto" firstAttribute="top" secondItem="5f1-Vv-kZK" secondAttribute="bottom" constant="44" id="gwv-BM-PhE"/>
+                            <constraint firstAttribute="trailing" secondItem="5f1-Vv-kZK" secondAttribute="trailing" id="ns3-Fp-toH"/>
+                            <constraint firstItem="zjR-gP-BKJ" firstAttribute="trailing" secondItem="5f1-Vv-kZK" secondAttribute="trailing" id="tM3-ln-YrF"/>
+                            <constraint firstItem="zjR-gP-BKJ" firstAttribute="leading" secondItem="5f1-Vv-kZK" secondAttribute="leading" id="yU2-lq-sDY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8Oo-pi-K3l"/>
+                    <connections>
+                        <outlet property="aboutMeWebView" destination="5f1-Vv-kZK" id="Yvx-Gx-iox"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m8X-OF-jNB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2612" y="-582"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="16X-Zp-yIN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bva-Qf-ZUe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="a75-kT-YgQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Atl-Mc-gRh" kind="relationship" relationship="rootViewController" id="A64-11-G3u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d7j-ZA-Aho" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aboutme 2" width="1000" height="859"/>
+        <image name="contact" width="1000" height="1429"/>
+        <image name="headtilt" width="2500" height="1667"/>
+        <image name="portfolio" width="1000" height="1305"/>
+    </resources>
+</document>
