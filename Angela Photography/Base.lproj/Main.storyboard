@@ -46,7 +46,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWJ-Rf-24S">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="242" id="Dck-CS-gkL"/>
+                                    <constraint firstAttribute="width" constant="317" id="Dck-CS-gkL"/>
                                     <constraint firstAttribute="height" constant="77" id="RGJ-KE-0U0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="49"/>
@@ -61,8 +61,8 @@
                             <constraint firstItem="FUi-b6-yXg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C2Q-sL-gwY"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="V0G-iO-LQn" secondAttribute="bottom" constant="143" id="CAO-uD-LhY"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FUi-b6-yXg" secondAttribute="bottom" id="Icy-9h-wMq"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="AWJ-Rf-24S" secondAttribute="trailing" constant="51" id="POD-Nq-uUU"/>
-                            <constraint firstItem="AWJ-Rf-24S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="SRm-OZ-Z6K"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AWJ-Rf-24S" secondAttribute="trailing" constant="15" id="POD-Nq-uUU"/>
+                            <constraint firstItem="AWJ-Rf-24S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="SRm-OZ-Z6K"/>
                             <constraint firstAttribute="trailing" secondItem="FUi-b6-yXg" secondAttribute="trailing" id="eQU-F1-BwO"/>
                             <constraint firstItem="V0G-iO-LQn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kzG-i4-cxu"/>
                             <constraint firstAttribute="trailing" secondItem="FUi-b6-yXg" secondAttribute="trailing" id="o06-GS-Ub7"/>
@@ -79,7 +79,7 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
-        <!--Angela Lauren PhotoGraphy-->
+        <!--View Controller-->
         <scene sceneID="5Yu-az-2pA">
             <objects>
                 <viewController id="Atl-Mc-gRh" customClass="ViewController" customModule="Angela_Photography" customModuleProvider="target" sceneMemberID="viewController">
@@ -101,7 +101,7 @@
                                                     <constraint firstAttribute="height" constant="59" id="sZu-kw-ksA"/>
                                                     <constraint firstAttribute="width" constant="152" id="wqz-jR-wZJ"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="19"/>
                                                 <state key="normal" title="About Me ">
                                                     <color key="titleColor" red="0.99627781410000005" green="0.99627781410000005" blue="0.99627781410000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
@@ -138,7 +138,7 @@
                                                     <constraint firstAttribute="width" constant="131" id="k1S-ag-VsM"/>
                                                     <constraint firstAttribute="height" constant="47" id="rla-oD-bUX"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <state key="normal" title="PortFolio">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -169,13 +169,13 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qIU-EA-kah" userLabel="Contact">
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact" translatesAutoresizingMaskIntoConstraints="NO" id="OAX-C0-hve"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jordandogs2" translatesAutoresizingMaskIntoConstraints="NO" id="OAX-C0-hve"/>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="li2-kX-PyG" customClass="SectionsButtons" customModule="Angela_Photography" customModuleProvider="target">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="80G-h2-bjS"/>
                                                     <constraint firstAttribute="width" constant="133" id="up1-U2-Uyj"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="19"/>
                                                 <state key="normal" title="Contact">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -215,7 +215,7 @@
                             <constraint firstItem="MnI-gg-CKt" firstAttribute="top" secondItem="L1K-f8-rdF" secondAttribute="top" id="yuk-fn-xZv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Angela Lauren PhotoGraphy" id="3ym-I4-4he"/>
+                    <navigationItem key="navigationItem" id="3ym-I4-4he"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="drg-Bz-mnW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -407,7 +407,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bva-Qf-ZUe" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="a75-kT-YgQ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="a75-kT-YgQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -423,8 +423,8 @@
     </scenes>
     <resources>
         <image name="aboutme 2" width="1000" height="859"/>
-        <image name="contact" width="1000" height="1429"/>
         <image name="headtilt" width="2500" height="1667"/>
+        <image name="jordandogs2" width="750" height="718"/>
         <image name="portfolio" width="1000" height="1305"/>
     </resources>
 </document>

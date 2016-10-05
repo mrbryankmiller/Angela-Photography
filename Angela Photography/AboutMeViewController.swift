@@ -23,6 +23,12 @@ class AboutMeViewController: UIViewController {
         
         aboutMeWebView.loadRequest(request as URLRequest)
         
+        
+        
+        self.navigationItem.title = "About Me"
+        
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.magenta]
+        
     }
 
     override func didReceiveMemoryWarning() {

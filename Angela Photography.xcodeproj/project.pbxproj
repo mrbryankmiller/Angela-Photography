@@ -14,7 +14,6 @@
 		1E99C8371D9F39BB00851B89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E99C8351D9F39BB00851B89 /* LaunchScreen.storyboard */; };
 		1E99C83F1D9F3AEF00851B89 /* Login Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E99C83E1D9F3AEF00851B89 /* Login Button.swift */; };
 		1E99C8411D9F3D3700851B89 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E99C8401D9F3D3700851B89 /* LoginViewController.swift */; };
-		1E99C8431D9F41B100851B89 /* SectionsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E99C8421D9F41B100851B89 /* SectionsTableTableViewController.swift */; };
 		1E99C8451D9F4A1700851B89 /* SectionsButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E99C8441D9F4A1700851B89 /* SectionsButtons.swift */; };
 		1E99C8471D9F4D7200851B89 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E99C8461D9F4D7200851B89 /* AboutMeViewController.swift */; };
 		1E99C8851D9F6F8900851B89 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E99C8841D9F6F8900851B89 /* PortfolioViewController.swift */; };
@@ -31,7 +30,6 @@
 		1E99C8381D9F39BB00851B89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E99C83E1D9F3AEF00851B89 /* Login Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Login Button.swift"; sourceTree = "<group>"; };
 		1E99C8401D9F3D3700851B89 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		1E99C8421D9F41B100851B89 /* SectionsTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsTableTableViewController.swift; sourceTree = "<group>"; };
 		1E99C8441D9F4A1700851B89 /* SectionsButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsButtons.swift; sourceTree = "<group>"; };
 		1E99C8461D9F4D7200851B89 /* AboutMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		1E99C8841D9F6F8900851B89 /* PortfolioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
@@ -68,12 +66,9 @@
 		1E99C82B1D9F39BB00851B89 /* Angela Photography */ = {
 			isa = PBXGroup;
 			children = (
+				1E99C8881D9F70B500851B89 /* Model */,
 				1E99C88A1D9F70C300851B89 /* Controller */,
 				1E99C8891D9F70BC00851B89 /* View */,
-				1E99C8881D9F70B500851B89 /* Model */,
-				1E99C82C1D9F39BB00851B89 /* AppDelegate.swift */,
-				1E99C83E1D9F3AEF00851B89 /* Login Button.swift */,
-				1E99C8441D9F4A1700851B89 /* SectionsButtons.swift */,
 				1E99C8331D9F39BB00851B89 /* Assets.xcassets */,
 				1E99C8351D9F39BB00851B89 /* LaunchScreen.storyboard */,
 				1E99C8381D9F39BB00851B89 /* Info.plist */,
@@ -84,6 +79,9 @@
 		1E99C8881D9F70B500851B89 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1E99C82C1D9F39BB00851B89 /* AppDelegate.swift */,
+				1E99C83E1D9F3AEF00851B89 /* Login Button.swift */,
+				1E99C8441D9F4A1700851B89 /* SectionsButtons.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -92,12 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				1E99C8301D9F39BB00851B89 /* Main.storyboard */,
-				1E99C8841D9F6F8900851B89 /* PortfolioViewController.swift */,
-				1E99C8461D9F4D7200851B89 /* AboutMeViewController.swift */,
-				1E99C8861D9F6F9800851B89 /* ContactViewController.swift */,
-				1E99C8421D9F41B100851B89 /* SectionsTableTableViewController.swift */,
-				1E99C82E1D9F39BB00851B89 /* ViewController.swift */,
-				1E99C8401D9F3D3700851B89 /* LoginViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -105,6 +97,11 @@
 		1E99C88A1D9F70C300851B89 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1E99C8461D9F4D7200851B89 /* AboutMeViewController.swift */,
+				1E99C8841D9F6F8900851B89 /* PortfolioViewController.swift */,
+				1E99C8861D9F6F9800851B89 /* ContactViewController.swift */,
+				1E99C82E1D9F39BB00851B89 /* ViewController.swift */,
+				1E99C8401D9F3D3700851B89 /* LoginViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -186,7 +183,6 @@
 				1E99C8451D9F4A1700851B89 /* SectionsButtons.swift in Sources */,
 				1E99C8471D9F4D7200851B89 /* AboutMeViewController.swift in Sources */,
 				1E99C82F1D9F39BB00851B89 /* ViewController.swift in Sources */,
-				1E99C8431D9F41B100851B89 /* SectionsTableTableViewController.swift in Sources */,
 				1E99C8871D9F6F9800851B89 /* ContactViewController.swift in Sources */,
 				1E99C8851D9F6F8900851B89 /* PortfolioViewController.swift in Sources */,
 				1E99C82D1D9F39BB00851B89 /* AppDelegate.swift in Sources */,
@@ -313,12 +309,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3V98524JP3;
 				INFOPLIST_FILE = "Angela Photography/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Devslopes.Angela-Photography";
+				PRODUCT_BUNDLE_IDENTIFIER = "Devslopes.Angela-Photography-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -326,12 +328,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3V98524JP3;
 				INFOPLIST_FILE = "Angela Photography/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Devslopes.Angela-Photography";
+				PRODUCT_BUNDLE_IDENTIFIER = "Devslopes.Angela-Photography-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -354,6 +362,7 @@
 				1E99C83D1D9F39BB00851B89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

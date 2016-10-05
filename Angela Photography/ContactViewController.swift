@@ -23,6 +23,10 @@ class ContactViewController: UIViewController {
         
         contactWebview.loadRequest(request as URLRequest)
         
+        self.navigationItem.title = "Contact Me"
+        
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.magenta]
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -20,6 +20,11 @@ class PortfolioViewController: UIViewController {
         
         porfolioWebView.loadRequest(request as URLRequest)
         
+        
+        self.navigationItem.title = "My Portfolio"
+        
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.magenta]
+        
     }
 
     override func didReceiveMemoryWarning() {
